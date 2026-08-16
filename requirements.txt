@@ -1,14 +1,14 @@
-notebook
-ipykernel
+# notebook
+# ipykernel
 numpy==1.26.4
 pandas==2.3.3
-seaborn
-matplotlib
-scikit-learn
+# seaborn
+# matplotlib
+# scikit-learn
 xgboost==3.2.0
 catboost==1.2.10
-Flask
-dill
+# Flask
+# dill
 streamlit==1.25.0
 python-dotenv==1.0.0
 joblib==1.2.0
