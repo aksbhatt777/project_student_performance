@@ -9,5 +9,8 @@ catboost
 xgboost
 Flask
 dill
+streamlit
+python-dotenv
+joblib
 
 #-e .
