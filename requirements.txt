@@ -8,7 +8,7 @@ pandas==2.3.3
 xgboost==3.2.0
 catboost==1.2.10
 # Flask
-# dill
+dill==0.4.1
 streamlit==1.25.0
 python-dotenv==1.0.0
 joblib==1.2.0
