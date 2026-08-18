@@ -9,9 +9,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 
-# ============================================
 # PAGE CONFIGURATION
-# ============================================
 st.set_page_config(
     page_title="Student Performance Predictor",
     page_icon="📚",
@@ -19,9 +17,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# ============================================
 # HEADER
-# ============================================
 st.title("📚 Student Performance Predictor")
 st.markdown("""
 This app predicts **Math Score** based on student characteristics and previous test scores.
@@ -30,9 +26,7 @@ Enter the student details below to get a prediction!
 
 st.divider()
 
-# ============================================
 # INPUT SECTION - TWO COLUMNS
-# ============================================
 col1, col2 = st.columns(2, gap="large")
 
 with col1:

@@ -67,15 +67,15 @@ class CustomData:
     
     def get_data_as_data_frame(self):
         try:
-            # ✅ CORRECT: Use the SAME column names as the training data
+            # Using columns same as the training data
             custom_data_input_dict = {
                 "gender": [self.gender],
-                "race/ethnicity": [self.race_ethnicity],  # ← Changed from race_ethnicity
-                "parental level of education": [self.parental_level_of_education],  # ← Changed from parental_level_of_education
+                "race/ethnicity": [self.race_ethnicity],  
+                "parental level of education": [self.parental_level_of_education],  
                 "lunch": [self.lunch],
-                "test preparation course": [self.test_preparation_course],  # ← Changed from test_preparation_course
-                "reading score": [self.reading_score],  # ← Changed from reading_score
-                "writing score": [self.writing_score]   # ← Changed from writing_score
+                "test preparation course": [self.test_preparation_course],  
+                "reading score": [self.reading_score],  
+                "writing score": [self.writing_score]   
             }
             
             df = pd.DataFrame(custom_data_input_dict)
