@@ -26,37 +26,6 @@ This project demonstrates a complete **MLOps-ready workflow** for student perfor
 - 📝 **Logging & Exception Handling** – Production-grade error tracking
 - 💾 **Artifact Management** – Versioned model and preprocessor pickles
 
----
-
-## 🏗️ Architecture
-┌─────────────────────────────────────────────────────────────┐
-│ PROJECT STRUCTURE │
-├─────────────────────────────────────────────────────────────┤
-│ │
-│ 📁 src/ │
-│ ├── 📁 components/ # ML Pipeline Components │
-│ │ ├── data_ingestion.py # Load & split data │
-│ │ ├── data_transformation.py # Preprocessing pipelines │
-│ │ └── model_trainer.py # Model training & eval │
-│ ├── 📁 pipeline/ # Prediction Pipeline │
-│ │ └── predict_pipeline.py # Real-time inference │
-│ ├── logger.py # Logging configuration │
-│ ├── exception.py # Custom exceptions │
-│ └── utils.py # Helper functions │
-│ │
-│ 📁 artifacts/ # Saved model artifacts │
-│ ├── model.pkl # Trained model │
-│ └── proprocessor.pkl # Preprocessor pipeline │
-│ │
-│ app.py # Streamlit web interface │
-│ Dockerfile # Container configuration │
-│ requirements.txt # Python dependencies │
-│ train_model.py # Training script │
-│ │
-└─────────────────────────────────────────────────────────────┘
-
-
-
 
 ### Data Flow
 Raw Data → Data Ingestion → Data Transformation → Model Training → Prediction Pipeline → Web UI
